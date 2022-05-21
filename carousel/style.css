@@ -1,0 +1,76 @@
+
+
+body{
+    margin: 0;
+    /* border: 1px solid rgb(17, 0, 255);
+} */}
+
+
+.carousel {
+    max-width: 600px;
+    /* border: 1px solid red; */
+    position: relative;
+    
+}
+.carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+.carousel-item{
+    display: none;
+}
+
+/* Position of it matters */
+.carousel-item-hidden{
+    display: none;
+} 
+@keyframes fadevisibility {
+    0% {
+        opacity:0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.carousel-item-visible{
+    display: block;
+    animation: fadevisibility .5s;
+}
+
+.carousel-actions{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    top: 50%;
+    transform: translateY(-50%);
+}
+button{
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: rgba(54, 135, 206,.4);
+}
+
+#carousel-button-prev {
+    margin-left: 20px;
+}
+
+#carousel-button-next {
+    margin-right: 20px;
+}
+button:hover,
+button:focus{
+    background-color: rgba(134, 67, 196,.4);
+}
+
